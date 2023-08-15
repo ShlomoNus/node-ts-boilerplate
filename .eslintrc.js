@@ -21,7 +21,6 @@ module.exports = {
     },
     plugins: ['@typescript-eslint', 'import'],
     rules: {
-        'react/jsx-filename-extension': 0,
         'no-unused-vars': 1,
         '@typescript-eslint/no-explicit-any': 1,
         'import/prefer-default-export': 0,
@@ -29,7 +28,7 @@ module.exports = {
     settings: {
         'import/resolver': {
             node: {
-                extensions: ['.js', '.jsx', '.ts', '.tsx'],
+                extensions: ['.js','.ts'],
                 moduleDirectory: ['node_modules', 'src/'],
             },
         },
